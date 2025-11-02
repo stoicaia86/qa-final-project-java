@@ -2,16 +2,16 @@
 
 public class TestConfigRunner {
     public static void main(String[] args) {
-        // 1️⃣ Instanță folosind constructorul cu 3 parametri
+        //  Instanță folosind constructorul cu 3 parametri
         BrowserConfig c1 = new BrowserConfig(BrowserType.FIREFOX, "125.0", true);
 
-        // 2️⃣ Instanță folosind constructorul cu 2 parametri
+        //  Instanță folosind constructorul cu 2 parametri
         BrowserConfig c2 = new BrowserConfig(BrowserType.EDGE, "124.0");
 
-        // 3️⃣ Instanță folosind constructorul cu 1 parametru
+        //  Instanță folosind constructorul cu 1 parametru
         BrowserConfig c3 = new BrowserConfig(BrowserType.CHROME);
 
-        // 4️⃣ Instanță folosind metoda statică factory
+        //  Instanță folosind metoda statică factory
         BrowserConfig c4 = BrowserConfig.createDefaultChromeConfig();
 
         // Afișăm toate configurațiile
